@@ -1,0 +1,1178 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>大象TV_纪录片与自然影像平台_大象TV片单与创作者档案</title>
+<meta name="description" content="大象TV是一个聚焦自然纪录片与人文影像的视频平台，整理大象TV最新片单、自然纪实、人文观察、独立短片、创作者访谈与观看指南，适合纪录片爱好者和影像创作者参考。">
+<meta name="keywords" content="自然纪录片,人文纪实,独立短片,影像创作者,片单推荐">
+<style>
+:root{
+  --brand:#0f5c4a;
+  --brand-deep:#0a3f33;
+  --brand-soft:#e6f2ee;
+  --accent:#e07b39;
+  --accent-soft:#fdf0e6;
+  --ink:#1c2422;
+  --ink-2:#42514d;
+  --ink-3:#6d7d78;
+  --line:#dde5e2;
+  --bg:#f7faf9;
+  --panel:#ffffff;
+  --radius:12px;
+  --radius-sm:8px;
+  --shadow:0 2px 10px rgba(15,92,74,.07);
+  --shadow-lg:0 10px 30px rgba(15,92,74,.12);
+  --font:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,sans-serif;
+  --header-h:60px;
+  --notice-h:38px;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:var(--font);
+  color:var(--ink);
+  background:var(--bg);
+  line-height:1.75;
+  font-size:15px;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none;}
+img{display:block;max-width:100%;}
+h1,h2,h3,h4{line-height:1.35;font-weight:700;}
+section[id],div[id]{scroll-margin-top:calc(var(--header-h) + var(--notice-h) + 14px);}
+
+/* ============ 吸顶公告条 ============ */
+.notice-bar{
+  position:sticky;top:0;z-index:60;
+  height:var(--notice-h);
+  background:linear-gradient(90deg,var(--brand-deep),var(--brand));
+  color:#eaf5f1;
+  font-size:13px;
+  display:flex;align-items:center;
+}
+.notice-inner{
+  width:100%;max-width:1400px;margin:0 auto;padding:0 20px;
+  display:flex;align-items:center;gap:12px;overflow:hidden;
+}
+.notice-tag{
+  flex:none;background:var(--accent);color:#fff;
+  font-size:11px;font-weight:700;padding:2px 8px;border-radius:20px;letter-spacing:.5px;
+}
+.notice-text{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.notice-text b{color:#ffd9b8;font-weight:600;}
+
+/* ============ 吸顶页头 ============ */
+.site-header{
+  position:sticky;top:var(--notice-h);z-index:55;
+  height:var(--header-h);
+  background:rgba(255,255,255,.94);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.header-inner{
+  max-width:1400px;margin:0 auto;height:100%;padding:0 20px;
+  display:flex;align-items:center;gap:24px;
+}
+.logo{display:flex;align-items:center;gap:9px;flex:none;}
+.logo-mark{width:34px;height:34px;flex:none;}
+.logo-text{font-size:19px;font-weight:800;color:var(--brand-deep);letter-spacing:.5px;}
+.logo-text span{color:var(--accent);}
+.main-nav{display:flex;gap:4px;flex-wrap:wrap;}
+.main-nav a{
+  font-size:14px;color:var(--ink-2);padding:6px 11px;border-radius:20px;
+  transition:.18s;white-space:nowrap;
+}
+.main-nav a:hover,.main-nav a:focus-visible{background:var(--brand-soft);color:var(--brand-deep);outline:none;}
+.header-search{
+  margin-left:auto;display:flex;align-items:center;gap:8px;flex:none;
+}
+.header-search input{
+  width:180px;padding:7px 12px;border:1px solid var(--line);border-radius:20px;
+  font-size:13px;font-family:var(--font);background:var(--bg);color:var(--ink);
+  transition:.18s;
+}
+.header-search input:focus{outline:none;border-color:var(--brand);background:#fff;box-shadow:0 0 0 3px rgba(15,92,74,.1);}
+.header-search button{
+  padding:7px 16px;border:none;border-radius:20px;background:var(--brand);color:#fff;
+  font-size:13px;font-family:var(--font);cursor:pointer;transition:.18s;
+}
+.header-search button:hover{background:var(--brand-deep);}
+.header-search button:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+
+/* ============ 首屏 ============ */
+.hero{
+  background:linear-gradient(160deg,#083b30 0%,#0f5c4a 55%,#17806a 100%);
+  color:#eaf5f1;position:relative;overflow:hidden;
+}
+.hero::after{
+  content:"";position:absolute;right:-120px;top:-120px;width:460px;height:460px;
+  border-radius:50%;border:1px solid rgba(255,255,255,.12);pointer-events:none;
+}
+.hero::before{
+  content:"";position:absolute;right:20px;bottom:-180px;width:340px;height:340px;
+  border-radius:50%;border:1px solid rgba(255,255,255,.08);pointer-events:none;
+}
+.hero-inner{
+  max-width:1400px;margin:0 auto;padding:56px 20px 60px;
+  display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;
+  position:relative;z-index:1;
+}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:7px;font-size:12px;letter-spacing:1px;
+  background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);
+  padding:4px 13px;border-radius:20px;margin-bottom:20px;color:#c9e8de;
+}
+.hero-badge i{width:6px;height:6px;border-radius:50%;background:var(--accent);display:inline-block;}
+.hero h1{
+  font-size:clamp(34px,4.4vw,52px);letter-spacing:1px;margin-bottom:18px;
+  color:#fff;font-weight:800;
+}
+.hero h1 em{font-style:normal;color:#ffc99c;}
+.hero-desc{
+  font-size:15.5px;line-height:1.9;color:#c2e0d6;max-width:540px;margin-bottom:28px;
+}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;padding:11px 26px;border-radius:26px;
+  font-size:14.5px;font-weight:600;transition:.2s;cursor:pointer;border:none;font-family:var(--font);
+}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:0 6px 18px rgba(224,123,57,.35);}
+.btn-primary:hover{background:#cf6a28;transform:translateY(-1px);}
+.btn-ghost{background:rgba(255,255,255,.1);color:#eaf5f1;border:1px solid rgba(255,255,255,.3);}
+.btn-ghost:hover{background:rgba(255,255,255,.18);}
+.btn:focus-visible{outline:2px solid #fff;outline-offset:3px;}
+.hero-stats{
+  display:flex;gap:34px;margin-top:36px;padding-top:26px;
+  border-top:1px solid rgba(255,255,255,.14);flex-wrap:wrap;
+}
+.hero-stat b{display:block;font-size:23px;color:#fff;letter-spacing:.5px;}
+.hero-stat span{font-size:12.5px;color:#9fc9bc;}
+.hero-visual{position:relative;display:flex;justify-content:center;}
+.hero-svg{width:100%;max-width:400px;height:auto;filter:drop-shadow(0 18px 40px rgba(0,0,0,.3));}
+
+/* ============ 容器 & 布局 ============ */
+.container{max-width:1400px;margin:0 auto;padding:0 20px;}
+.layout-3col{
+  display:grid;grid-template-columns:186px minmax(0,1fr) 252px;
+  gap:28px;padding:38px 0 20px;align-items:start;
+}
+.side-left,.side-right{position:sticky;top:calc(var(--header-h) + var(--notice-h) + 18px);}
+
+/* ============ 侧栏 ============ */
+.panel{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  box-shadow:var(--shadow);overflow:hidden;
+}
+.panel + .panel{margin-top:18px;}
+.panel-head{
+  padding:13px 16px 11px;font-size:13.5px;font-weight:700;color:var(--brand-deep);
+  border-bottom:1px solid var(--line);display:flex;align-items:center;gap:8px;
+  letter-spacing:.3px;
+}
+.panel-head::before{
+  content:"";width:3px;height:14px;border-radius:2px;background:var(--accent);flex:none;
+}
+.channel-list{list-style:none;padding:8px;}
+.channel-list a{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:8px 11px;border-radius:var(--radius-sm);font-size:13.5px;color:var(--ink-2);
+  transition:.15s;
+}
+.channel-list a:hover,.channel-list a:focus-visible{background:var(--brand-soft);color:var(--brand-deep);outline:none;}
+.channel-list a span{font-size:11.5px;color:var(--ink-3);}
+.mini-list{list-style:none;padding:6px 8px 10px;}
+.mini-list li{padding:7px 10px;font-size:13px;color:var(--ink-2);border-radius:var(--radius-sm);display:flex;gap:8px;}
+.mini-list li:hover{background:var(--bg);}
+.mini-list .num{
+  flex:none;width:18px;height:18px;border-radius:4px;background:var(--brand-soft);
+  color:var(--brand-deep);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;
+  margin-top:2px;
+}
+.mini-list .num.top{background:var(--accent);color:#fff;}
+.mini-list .txt{flex:1;min-width:0;line-height:1.5;}
+.mini-list .txt small{display:block;color:var(--ink-3);font-size:11.5px;}
+
+/* ============ 正文板块通用 ============ */
+.block{margin-bottom:40px;}
+.block:last-child{margin-bottom:16px;}
+.block-head{
+  display:flex;align-items:baseline;justify-content:space-between;gap:16px;
+  margin-bottom:18px;flex-wrap:wrap;
+}
+.block-head h2{
+  font-size:21px;color:var(--brand-deep);display:flex;align-items:center;gap:10px;
+}
+.block-head h2::before{
+  content:"";width:5px;height:20px;border-radius:3px;
+  background:linear-gradient(180deg,var(--brand),var(--accent));flex:none;
+}
+.block-head .lead{font-size:13px;color:var(--ink-3);}
+.block-head .more{font-size:13px;color:var(--brand);font-weight:600;}
+.block-head .more:hover{text-decoration:underline;}
+
+/* ============ 领域概览 ============ */
+.overview{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px 28px;box-shadow:var(--shadow);
+  border-left:4px solid var(--brand);
+}
+.overview p{font-size:14.5px;color:var(--ink-2);margin-bottom:14px;line-height:1.95;}
+.overview p:last-child{margin-bottom:0;}
+.overview strong{color:var(--brand-deep);font-weight:700;}
+
+/* ============ 精选卡片 ============ */
+.card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;}
+.card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;box-shadow:var(--shadow);transition:.22s;display:flex;flex-direction:column;
+}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:#c9ddd6;}
+.card-img-wrap{position:relative;aspect-ratio:4/3;background:var(--brand-soft);overflow:hidden;}
+.card-img-wrap img{width:100%;height:100%;object-fit:cover;transition:.35s;}
+.card:hover .card-img-wrap img{transform:scale(1.05);}
+.card-badge{
+  position:absolute;top:10px;left:10px;background:rgba(10,63,51,.85);color:#fff;
+  font-size:11px;padding:3px 9px;border-radius:20px;backdrop-filter:blur(4px);
+}
+.card-body{padding:14px 15px 15px;display:flex;flex-direction:column;flex:1;}
+.card-body h3{font-size:15.5px;color:var(--ink);margin-bottom:7px;line-height:1.45;}
+.card-body h3:hover{color:var(--brand);}
+.card-desc{font-size:13px;color:var(--ink-3);line-height:1.7;margin-bottom:11px;flex:1;}
+.tag-row{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;}
+.tag{
+  font-size:11.5px;color:var(--brand-deep);background:var(--brand-soft);
+  padding:2px 8px;border-radius:4px;white-space:nowrap;
+}
+.tag.warm{background:var(--accent-soft);color:#b35d21;}
+.card-meta{
+  display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--ink-3);
+  padding-top:10px;border-top:1px dashed var(--line);
+}
+.card-meta .score{color:var(--accent);font-weight:700;}
+
+/* ============ 最新更新列表 ============ */
+.update-list{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);}
+.update-item{
+  display:flex;align-items:flex-start;gap:14px;padding:13px 18px;
+  border-bottom:1px solid var(--line);transition:.15s;
+}
+.update-item:last-child{border-bottom:none;}
+.update-item:hover{background:var(--bg);}
+.update-time{
+  flex:none;width:74px;font-size:12px;color:var(--ink-3);padding-top:2px;font-variant-numeric:tabular-nums;
+}
+.update-time.today{color:var(--accent);font-weight:700;}
+.update-main{flex:1;min-width:0;}
+.update-main b{font-size:14px;color:var(--ink);font-weight:600;display:block;margin-bottom:2px;}
+.update-main p{font-size:12.5px;color:var(--ink-3);line-height:1.6;}
+.update-type{
+  flex:none;font-size:11px;padding:2px 9px;border-radius:4px;background:var(--brand-soft);
+  color:var(--brand-deep);margin-top:2px;white-space:nowrap;
+}
+.update-type.live{background:var(--accent-soft);color:#b35d21;}
+
+/* ============ 分类入口 ============ */
+.cat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;}
+.cat-card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:17px 16px;transition:.2s;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:5px;
+  border-top:3px solid var(--brand);
+}
+.cat-card:nth-child(2n){border-top-color:var(--accent);}
+.cat-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg);border-color:#c9ddd6;}
+.cat-card b{font-size:15px;color:var(--ink);}
+.cat-card span{font-size:12px;color:var(--ink-3);line-height:1.6;}
+.cat-card em{font-style:normal;font-size:11.5px;color:var(--brand);font-weight:600;margin-top:3px;}
+
+/* ============ 深度解析 ============ */
+.article{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:30px 34px;box-shadow:var(--shadow);
+}
+.article h3{
+  font-size:17px;color:var(--brand-deep);margin:26px 0 12px;
+  padding-left:13px;border-left:4px solid var(--accent);line-height:1.4;
+}
+.article h3:first-child{margin-top:0;}
+.article p{font-size:14.5px;color:var(--ink-2);margin-bottom:13px;line-height:1.95;}
+.article ul,.article ol{margin:0 0 14px 22px;}
+.article li{font-size:14.5px;color:var(--ink-2);margin-bottom:8px;line-height:1.9;}
+.article li b{color:var(--brand-deep);}
+.article .callout{
+  background:var(--brand-soft);border-radius:var(--radius-sm);padding:15px 18px;
+  font-size:13.5px;color:var(--brand-deep);line-height:1.85;margin:16px 0;
+  border-left:3px solid var(--brand);
+}
+
+/* ============ 体验指南步骤 ============ */
+.steps{display:grid;gap:14px;}
+.step{
+  display:flex;gap:16px;background:var(--panel);border:1px solid var(--line);
+  border-radius:var(--radius);padding:17px 20px;box-shadow:var(--shadow);
+}
+.step-num{
+  flex:none;width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--brand),var(--brand-deep));
+  color:#fff;font-weight:800;font-size:16px;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 12px rgba(15,92,74,.25);
+}
+.step-body b{font-size:15px;color:var(--ink);display:block;margin-bottom:5px;}
+.step-body p{font-size:13.5px;color:var(--ink-3);line-height:1.8;}
+
+/* ============ FAQ ============ */
+.faq{display:grid;gap:11px;}
+.faq details{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;transition:.18s;
+}
+.faq details[open]{border-color:#bcd6cd;box-shadow:var(--shadow);}
+.faq summary{
+  padding:15px 20px;font-size:14.5px;font-weight:600;color:var(--ink);cursor:pointer;
+  list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;
+}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary::after{
+  content:"+";flex:none;font-size:19px;color:var(--brand);font-weight:400;line-height:1;
+  transition:.2s;
+}
+.faq details[open] summary::after{content:"−";transform:rotate(0);}
+.faq summary:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;}
+.faq .answer{padding:0 20px 17px;font-size:13.5px;color:var(--ink-3);line-height:1.85;border-top:1px dashed var(--line);padding-top:13px;}
+
+/* ============ 评论 ============ */
+.comment-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;}
+.comment{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:15px 17px;box-shadow:var(--shadow);
+}
+.comment-top{display:flex;align-items:center;gap:10px;margin-bottom:9px;}
+.avatar{
+  width:32px;height:32px;border-radius:50%;flex:none;color:#fff;font-size:13px;font-weight:700;
+  display:flex;align-items:center;justify-content:center;
+}
+.comment-name{font-size:13px;font-weight:600;color:var(--ink);}
+.comment-stars{font-size:11px;color:var(--accent);margin-left:auto;letter-spacing:1px;}
+.comment-text{font-size:13px;color:var(--ink-2);line-height:1.8;}
+.comment-text b{color:var(--brand-deep);}
+
+/* ============ 资讯 ============ */
+.news-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;}
+.news-card{
+  display:flex;gap:14px;background:var(--panel);border:1px solid var(--line);
+  border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:.2s;
+}
+.news-card:hover{border-color:#c9ddd6;box-shadow:var(--shadow-lg);}
+.news-thumb{flex:none;width:118px;aspect-ratio:3/4;background:var(--brand-soft);overflow:hidden;}
+.news-thumb img{width:100%;height:100%;object-fit:cover;}
+.news-body{padding:12px 14px 12px 0;flex:1;min-width:0;display:flex;flex-direction:column;}
+.news-date{font-size:11.5px;color:var(--ink-3);margin-bottom:4px;}
+.news-body h3{font-size:14px;color:var(--ink);line-height:1.5;margin-bottom:6px;}
+.news-body p{font-size:12.5px;color:var(--ink-3);line-height:1.65;flex:1;}
+
+/* ============ 相关推荐标签 & 时间线 ============ */
+.rel-tags{display:flex;flex-wrap:wrap;gap:10px;}
+.rel-tag{
+  background:var(--panel);border:1px solid var(--line);border-radius:20px;
+  padding:7px 16px;font-size:13.5px;color:var(--ink-2);transition:.18s;box-shadow:var(--shadow);
+}
+.rel-tag:hover{border-color:var(--brand);color:var(--brand-deep);background:var(--brand-soft);}
+.rel-tag span{color:var(--ink-3);font-size:12px;margin-left:4px;}
+
+.timeline{position:relative;padding-left:24px;}
+.timeline::before{
+  content:"";position:absolute;left:6px;top:6px;bottom:6px;width:2px;
+  background:linear-gradient(180deg,var(--brand),var(--accent));border-radius:2px;
+}
+.tl-item{position:relative;padding-bottom:20px;}
+.tl-item:last-child{padding-bottom:0;}
+.tl-item::before{
+  content:"";position:absolute;left:-24px;top:5px;width:12px;height:12px;border-radius:50%;
+  background:#fff;border:3px solid var(--brand);
+}
+.tl-item:nth-child(2n)::before{border-color:var(--accent);}
+.tl-date{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px;}
+.tl-item b{font-size:14.5px;color:var(--ink);display:block;margin-bottom:3px;}
+.tl-item p{font-size:13px;color:var(--ink-3);line-height:1.7;}
+
+/* ============ 榜单 ============ */
+.rank-table{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);}
+.rank-row{
+  display:flex;align-items:center;gap:14px;padding:12px 18px;border-bottom:1px solid var(--line);
+  transition:.15s;
+}
+.rank-row:last-child{border-bottom:none;}
+.rank-row:hover{background:var(--bg);}
+.rank-no{
+  flex:none;width:24px;height:24px;border-radius:6px;background:var(--brand-soft);color:var(--brand-deep);
+  font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center;
+}
+.rank-no.g1{background:var(--accent);color:#fff;}
+.rank-no.g2{background:#f0a868;color:#fff;}
+.rank-no.g3{background:#f6c79a;color:#8a4a1c;}
+.rank-name{flex:1;min-width:0;font-size:14px;color:var(--ink);}
+.rank-name small{display:block;font-size:12px;color:var(--ink-3);font-weight:400;}
+.rank-score{flex:none;font-size:13px;color:var(--accent);font-weight:700;font-variant-numeric:tabular-nums;}
+.rank-trend{flex:none;font-size:11.5px;width:46px;text-align:right;}
+.rank-trend.up{color:#2e8b6f;}
+.rank-trend.down{color:#c0553a;}
+.rank-trend.flat{color:var(--ink-3);}
+
+/* ============ 搜索无结果 ============ */
+.no-result{
+  display:none;padding:26px;text-align:center;font-size:14px;color:var(--ink-3);
+  background:var(--panel);border:1px dashed var(--line);border-radius:var(--radius);
+}
+.no-result.show{display:block;}
+
+/* ============ 页尾 ============ */
+.site-footer{
+  margin-top:46px;background:var(--brand-deep);color:#b9d6cc;
+}
+.footer-inner{max-width:1400px;margin:0 auto;padding:44px 20px 22px;}
+.footer-top{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:34px;padding-bottom:30px;border-bottom:1px solid rgba(255,255,255,.12);}
+.footer-brand .logo-text{color:#fff;font-size:20px;}
+.footer-brand .logo-text span{color:#ffb27a;}
+.footer-brand p{font-size:13px;line-height:1.85;margin-top:14px;color:#9fc9bc;max-width:320px;}
+.footer-col h4{font-size:13.5px;color:#fff;margin-bottom:13px;letter-spacing:.5px;}
+.footer-col ul{list-style:none;}
+.footer-col li{margin-bottom:9px;}
+.footer-col a{font-size:13px;color:#9fc9bc;transition:.15s;}
+.footer-col a:hover{color:#ffb27a;}
+.footer-bottom{
+  padding-top:20px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  font-size:12px;color:#7fae9f;line-height:1.8;
+}
+.footer-bottom a{color:#9fc9bc;}
+.footer-bottom a:hover{color:#ffb27a;}
+
+/* ============ 响应式 ============ */
+@media (max-width:1180px){
+  .layout-3col{grid-template-columns:170px minmax(0,1fr) 226px;gap:20px;}
+  .card-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .cat-grid{grid-template-columns:repeat(3,minmax(0,1fr));}
+}
+@media (max-width:1024px){
+  .layout-3col{grid-template-columns:minmax(0,1fr) 260px;}
+  .side-left{grid-column:1/-1;position:static;}
+  .side-left .panel{display:inline-block;vertical-align:top;margin-right:14px;margin-top:0;}
+  .side-left .panel + .panel{margin-top:0;}
+  .channel-list{display:flex;flex-wrap:wrap;gap:4px;padding:8px;}
+  .channel-list li{flex:none;}
+  .channel-list a{padding:6px 12px;border:1px solid var(--line);}
+  .hero-inner{grid-template-columns:1fr;gap:30px;}
+  .hero-visual{order:-1;max-width:300px;margin:0 auto;}
+  .main-nav{display:none;}
+  .header-search input{width:140px;}
+}
+@media (max-width:860px){
+  .comment-grid,.news-grid{grid-template-columns:1fr;}
+  .cat-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+@media (max-width:740px){
+  body{font-size:14.5px;}
+  .layout-3col{grid-template-columns:1fr;padding-top:24px;}
+  .side-right{position:static;grid-column:1;}
+  .header-inner{gap:12px;padding:0 14px;}
+  .header-search input{width:100px;}
+  .header-search button{padding:7px 11px;}
+  .logo-text{font-size:17px;}
+  .hero-inner{padding:38px 16px 44px;}
+  .hero-stats{gap:22px;}
+  .card-grid{grid-template-columns:1fr;}
+  .cat-grid{grid-template-columns:1fr;}
+  .article{padding:22px 18px;}
+  .overview{padding:20px 18px;}
+  .container{padding:0 14px;}
+  .notice-inner{padding:0 14px;}
+  .footer-top{grid-template-columns:1fr 1fr;gap:24px;}
+  .footer-brand{grid-column:1/-1;}
+  .update-item{flex-wrap:wrap;gap:6px 12px;}
+  .update-time{width:auto;}
+  .update-type{margin-left:auto;}
+  .step{padding:14px 15px;gap:12px;}
+  .step-num{width:32px;height:32px;font-size:14px;}
+  .news-thumb{width:96px;}
+}
+@media (max-width:400px){
+  .header-search{display:none;}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<!-- 吸顶公告条 -->
+<div class="notice-bar" role="region" aria-label="站内公告">
+  <div class="notice-inner">
+    <span class="notice-tag">更新</span>
+    <span class="notice-text">今天新增 <b>9 部</b> 自然纪实与人文短片 · 《雪线之上》第二季第 6 集已上线 · 11 月 26 日「高原之声」直播预约开启</span>
+  </div>
+</div>
+
+<!-- 吸顶页头 -->
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="/#top" aria-label="大象TV 首页">
+      <svg class="logo-mark" viewBox="0 0 40 40" role="img" aria-label="大象TV 图形标志">
+        <rect width="40" height="40" rx="10" fill="#0f5c4a"/>
+        <path d="M11 15c0-3 2.4-5 5.6-5h1.2c2.2 0 3.4 1.2 3.4 3v9.4c0 3.6 2 6 5.4 6 2.6 0 4.4-1.6 4.4-4.2 0-2.4-1.6-3.8-3.8-3.8" stroke="#ffc99c" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+        <circle cx="14.4" cy="15.2" r="1.7" fill="#eaf5f1"/>
+        <path d="M9 27.4h9" stroke="#eaf5f1" stroke-width="2.2" stroke-linecap="round"/>
+      </svg>
+      <span class="logo-text">大象<span>TV</span></span>
+    </a>
+    <nav class="main-nav" aria-label="主导航">
+      <a href="/#overview">平台概览</a>
+      <a href="/#featured">精选片单</a>
+      <a href="/#updates">最新更新</a>
+      <a href="/#channels">频道分类</a>
+      <a href="/#analysis">深度解析</a>
+      <a href="/#guide">观看指南</a>
+      <a href="/#comments">观众评论</a>
+    </nav>
+    <div class="header-search">
+      <input type="search" id="siteSearch" placeholder="搜索片名或类型" aria-label="搜索片名或类型">
+      <button type="button" id="searchBtn">查找</button>
+    </div>
+  </div>
+</header>
+
+<!-- 首屏 -->
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <span class="hero-badge"><i></i>自然纪实 · 人文影像 · 独立短片</span>
+      <h1>大象TV</h1>
+      <p class="hero-desc">一个以自然纪录片和人文纪实为核心的影像平台，收录高原、海洋、荒野与城市生活的长片与短片，附创作者访谈、片单解析和观看顺序建议，适合想系统看纪录片的观众。</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/#featured">查看本周精选片单</a>
+        <a class="btn btn-ghost" href="/#channels">按频道浏览</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><b>1,286</b><span>在架影像条目</span></div>
+        <div class="hero-stat"><b>9</b><span>今天新增内容</span></div>
+        <div class="hero-stat"><b>42</b><span>合作创作者</span></div>
+        <div class="hero-stat"><b>4.7</b><span>站内平均评分</span></div>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <svg class="hero-svg" viewBox="0 0 360 300" role="img" aria-label="大象TV 纪录片构图示意">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#1a8a72"/>
+            <stop offset="1" stop-color="#0a3f33"/>
+          </linearGradient>
+          <linearGradient id="sun" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#ffd9b8"/>
+            <stop offset="1" stop-color="#e07b39"/>
+          </linearGradient>
+        </defs>
+        <rect x="8" y="8" width="344" height="284" rx="16" fill="url(#sky)" opacity=".55"/>
+        <circle cx="262" cy="82" r="34" fill="url(#sun)" opacity=".9"/>
+        <path d="M8 236c40-42 78-58 118-40 34 15 56 12 84-8 30-22 62-24 94-4v100a16 16 0 0 1-16 16H24a16 16 0 0 1-16-16z" fill="#0a3f33" opacity=".85"/>
+        <path d="M8 258c46-30 84-30 122-12 32 15 60 14 88-2 28-15 60-16 94 4v28a16 16 0 0 1-16 16H24a16 16 0 0 1-16-16z" fill="#062b23"/>
+        <path d="M104 196c0-22 10-34 26-34s26 12 26 34" stroke="#eaf5f1" stroke-width="3" fill="none" stroke-linecap="round" opacity=".75"/>
+        <circle cx="130" cy="152" r="11" fill="#ffc99c"/>
+        <path d="M96 200h68" stroke="#e07b39" stroke-width="3" stroke-linecap="round"/>
+        <g opacity=".8">
+          <path d="M228 160c-6-8-4-20 6-24 10-4 20 3 20 13s-9 16-18 13" stroke="#eaf5f1" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+          <path d="M250 150c4-6 12-6 15 1" stroke="#eaf5f1" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        </g>
+        <rect x="24" y="24" width="62" height="20" rx="10" fill="#e07b39" opacity=".9"/>
+        <text x="55" y="38" font-size="11" fill="#fff" text-anchor="middle" font-family="sans-serif">4K 纪实</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 主内容区：三栏门户 -->
+<div class="container">
+  <div class="layout-3col">
+
+    <!-- 左频道索引 -->
+    <aside class="side-left">
+      <nav class="panel" aria-label="频道索引">
+        <div class="panel-head">频道索引</div>
+        <ul class="channel-list">
+          <li><a href="/#channels">自然地理 <span>312</span></a></li>
+          <li><a href="/#channels">野生动物 <span>248</span></a></li>
+          <li><a href="/#channels">人文观察 <span>196</span></a></li>
+          <li><a href="/#channels">城市生活 <span>154</span></a></li>
+          <li><a href="/#channels">独立短片 <span>132</span></a></li>
+          <li><a href="/#channels">历史档案 <span>98</span></a></li>
+          <li><a href="/#channels">科学探索 <span>87</span></a></li>
+          <li><a href="/#channels">创作者访谈 <span>59</span></a></li>
+        </ul>
+      </nav>
+      <div class="panel">
+        <div class="panel-head">本周直播</div>
+        <ul class="mini-list">
+          <li><span class="num top">1</span><span class="txt">高原之声·冬季迁徙观察<small>11-26 20:00 预约</small></span></li>
+          <li><span class="num">2</span><span class="txt">珊瑚礁修复现场连线<small>11-27 19:30</small></span></li>
+          <li><span class="num">3</span><span class="txt">导演陈屿谈长片剪辑<small>11-28 21:00</small></span></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- 中间主内容 -->
+    <main>
+
+      <!-- 1. 领域概览 -->
+      <section class="block" id="overview">
+        <div class="block-head">
+          <h2>自然纪实影像的当下版图</h2>
+          <span class="lead">2026 年 11 月更新</span>
+        </div>
+        <div class="overview">
+          <p>大象TV 所覆盖的自然纪实影像，大致分为四条主线：<strong>荒野与野生动物</strong>记录物种行为与栖息地变化，<strong>地理与气候</strong>追踪冰川、沙漠、海岸线的年际变化，<strong>人文观察</strong>把镜头对准牧区、渔村、林场等与自然共生的生活方式，<strong>科学探索</strong>则用实验与数据解释现象背后的机制。四类内容在拍摄周期、叙事节奏和观看门槛上差别很大。</p>
+          <p>今年以来值得注意的变化是，长片与短片的边界在变模糊。不少创作者把 8—15 分钟的<strong>独立短片</strong>做成系列，围绕同一个地理单元持续更新，比如《雪线之上》第二季就以每两周一支短片的方式推进，累计素材最终剪成 90 分钟长片。这种「短片先行、长片收口」的节奏，正在成为自然影像的常见生产路径。</p>
+          <p>另一个方向是<strong>历史档案</strong>的再利用。上世纪八九十年代拍摄的胶片素材经过修复后重新上线，配合当代科学家的注释，形成「旧影像 + 新解读」的结构。对观众来说，这类内容的价值不在于画面多精致，而在于能直观看到三十年间同一条冰川、同一片湿地的变化幅度。</p>
+          <p>如果你刚接触这类内容，建议从单集 25 分钟以内的短片入手，先熟悉叙事方式，再进入三集以上的长片。平台上的<strong>创作者访谈</strong>栏目也值得配合观看，很多拍摄决策的背景，只有听完访谈才会理解。</p>
+        </div>
+      </section>
+
+      <!-- 2. 精选内容推荐 -->
+      <section class="block" id="featured">
+        <div class="block-head">
+          <h2>本周精选片单</h2>
+          <span class="lead">6 部正在热映与近期上线</span>
+        </div>
+        <div class="card-grid" id="cardGrid">
+
+          <article class="card" data-name="雪线之上 第二季 高原 野生动物">
+            <div class="card-img-wrap">
+              <img src="https://picsum.photos/seed/xuexian-gaoyuan21/400/300" width="400" height="300" loading="lazy" alt="雪线之上第二季高原野生动物纪录片封面">
+              <span class="card-badge">连载中</span>
+            </div>
+            <div class="card-body">
+              <h3>雪线之上 第二季</h3>
+              <div class="tag-row"><span class="tag">高原生态</span><span class="tag">野生动物</span><span class="tag warm">4K</span></div>
+              <p class="card-desc">跟拍青藏高原东缘的岩羊与雪豹种群，第 6 集记录入冬后岩羊下移到海拔 4200 米的活动带，摄制组在零下 18 度连续蹲守 11 天。</p>
+              <div class="card-meta"><span>更新至第 6 集</span><span class="score">9.3 分</span></div>
+            </div>
+          </article>
+
+          <article class="card" data-name="潮间带 海洋 生态 短片">
+            <div class="card-img-wrap">
+              <img src="https://picsum.photos/seed/chaojiandai-sea07/400/300" width="400" height="300" loading="lazy" alt="潮间带海洋生态纪录片封面">
+              <span class="card-badge">新上线</span>
+            </div>
+            <div class="card-body">
+              <h3>潮间带</h3>
+              <div class="tag-row"><span class="tag">海洋生态</span><span class="tag">独立短片</span><span class="tag warm">微距</span></div>
+              <p class="card-desc">用微距镜头记录福建沿海潮间带的 24 小时，藤壶、海葵与招潮蟹在潮水涨落间的行为被完整呈现，全片无旁白，靠环境声推进。</p>
+              <div class="card-meta"><span>42 分钟 · 单片</span><span class="score">9.0 分</span></div>
+            </div>
+          </article>
+
+          <article class="card" data-name="牧场的最后一年 人文 观察">
+            <div class="card-img-wrap">
+              <img src="https://picsum.photos/seed/muchang-renwen12/400/300" width="400" height="300" loading="lazy" alt="牧场的最后一年人文纪录片封面">
+              <span class="card-badge">口碑新作</span>
+            </div>
+            <div class="card-body">
+              <h3>牧场的最后一年</h3>
+              <div class="tag-row"><span class="tag">人文观察</span><span class="tag">牧区生活</span><span class="tag">口述史</span></div>
+              <p class="card-desc">记录内蒙古东部一户牧民在草场轮牧政策调整后的完整一年，重点在两代人对「还养不养牛」的分歧，没有解说词，全靠对话推进。</p>
+              <div class="card-meta"><span>3 集 · 全片上线</span><span class="score">9.1 分</span></div>
+            </div>
+          </article>
+
+          <article class="card" data-name="冰川三十年 历史档案 气候">
+            <div class="card-img-wrap">
+              <img src="https://picsum.photos/seed/bingchuan-file33/400/300" width="400" height="300" loading="lazy" alt="冰川三十年历史档案纪录片封面">
+              <span class="card-badge">档案修复</span>
+            </div>
+            <div class="card-body">
+              <h3>冰川三十年</h3>
+              <div class="tag-row"><span class="tag">历史档案</span><span class="tag">气候变化</span><span class="tag warm">胶片修复</span></div>
+              <p class="card-desc">把 1994 年与 2024 年在同一机位拍摄的天山冰川影像并置，配合冰川学家的现场测量数据，直观呈现退缩距离与冰舌高度变化。</p>
+              <div class="card-meta"><span>68 分钟 · 单片</span><span class="score">8.8 分</span></div>
+            </div>
+          </article>
+
+          <article class="card" data-name="夜行城市 城市生活 野生动物">
+            <div class="card-img-wrap">
+              <img src="https://picsum.photos/seed/yexing-city18/400/300" width="400" height="300" loading="lazy" alt="夜行城市野生动物纪录片封面">
+              <span class="card-badge">热映</span>
+            </div>
+            <div class="card-body">
+              <h3>夜行城市</h3>
+              <div class="tag-row"><span class="tag">城市生活</span><span class="tag">红外摄影</span><span class="tag">野生动物</span></div>
+              <p class="card-desc">用红外相机跟拍城市夜间活动的貉、刺猬与红隼，第 4 集记录了小区垃圾房周边三个物种的固定活动路线，素材来自 46 台民用相机。</p>
+              <div class="card-meta"><span>更新至第 4 集</span><span class="score">8.9 分</span></div>
+            </div>
+          </article>
+
+          <article class="card" data-name="镜头之外 创作者访谈">
+            <div class="card-img-wrap">
+              <img src="https://picsum.photos/seed/jingtou-interview09/400/300" width="400" height="300" loading="lazy" alt="镜头之外创作者访谈节目封面">
+              <span class="card-badge">访谈</span>
+            </div>
+            <div class="card-body">
+              <h3>镜头之外</h3>
+              <div class="tag-row"><span class="tag">创作者访谈</span><span class="tag">幕后</span><span class="tag warm">音频+图文</span></div>
+              <p class="card-desc">每期请一位自然影像创作者讲一个具体拍摄难题：如何在不干扰的前提下靠近雪豹、水下收音怎么处理、长时间蹲守的补给怎么安排。</p>
+              <div class="card-meta"><span>第 27 期已上线</span><span class="score">9.2 分</span></div>
+            </div>
+          </article>
+
+        </div>
+        <div class="no-result" id="noResult">没有找到匹配的片名或类型，试试「高原」「海洋」「人文」「短片」等关键词。</div>
+      </section>
+
+      <!-- 3. 最新更新 -->
+      <section class="block" id="updates">
+        <div class="block-head">
+          <h2>最新更新与播出动态</h2>
+          <span class="lead">11 月 25 日当天整理</span>
+        </div>
+        <div class="update-list">
+          <div class="update-item">
+            <span class="update-time today">今天 09:30</span>
+            <div class="update-main"><b>《雪线之上》第二季第 6 集上线</b><p>本集主题为「下移的羊群」，记录入冬后岩羊活动带海拔变化，片尾附 3 分钟摄制手记。</p></div>
+            <span class="update-type">正片</span>
+          </div>
+          <div class="update-item">
+            <span class="update-time today">今天 08:15</span>
+            <div class="update-main"><b>《潮间带》4K 修复版替换原片源</b><p>重新调色并补录了环境声轨，微距段落的暗部细节有明显改善。</p></div>
+            <span class="update-type">修复</span>
+          </div>
+          <div class="update-item">
+            <span class="update-time">昨天 21:10</span>
+            <div class="update-main"><b>《牧场的最后一年》第 3 集上线</b><p>收尾集聚焦草场确权后的第一个冬天，两代人的选择在本集给出结果。</p></div>
+            <span class="update-type">正片</span>
+          </div>
+          <div class="update-item">
+            <span class="update-time">昨天 18:40</span>
+            <div class="update-main"><b>「高原之声」直播预约开放</b><p>11 月 26 日 20:00 开始，摄制组将在海拔 4500 米营地做 90 分钟实时连线。</p></div>
+            <span class="update-type live">直播</span>
+          </div>
+          <div class="update-item">
+            <span class="update-time">11-23 16:20</span>
+            <div class="update-main"><b>《夜行城市》第 4 集上线</b><p>本期素材来自 46 台志愿者架设的红外相机，附完整点位分布图。</p></div>
+            <span class="update-type">正片</span>
+          </div>
+          <div class="update-item">
+            <span class="update-time">11-22 11:05</span>
+            <div class="update-main"><b>《冰川三十年》胶片修复版上线</b><p>1994 年素材完成 4K 扫描与划痕修复，新增冰川学家 12 分钟注释音轨。</p></div>
+            <span class="update-type">修复</span>
+          </div>
+          <div class="update-item">
+            <span class="update-time">11-20 19:30</span>
+            <div class="update-main"><b>《镜头之外》第 27 期上线</b><p>嘉宾为水下摄影师周野，谈浅海拍摄的浮力控制与收音方案。</p></div>
+            <span class="update-type">访谈</span>
+          </div>
+          <div class="update-item">
+            <span class="update-time">11-18 14:00</span>
+            <div class="update-main"><b>新增「历史档案」频道分类</b><p>原有胶片修复类内容统一归入该频道，共迁移 98 部条目。</p></div>
+            <span class="update-type">频道</span>
+          </div>
+          <div class="update-item">
+            <span class="update-time">11-15 10:30</span>
+            <div class="update-main"><b>《候鸟驿站》短片系列开更</b><p>首支短片记录江苏沿海滩涂的鸻鹬类停歇期，全长 11 分钟。</p></div>
+            <span class="update-type">新系列</span>
+          </div>
+          <div class="update-item">
+            <span class="update-time">11-12 17:45</span>
+            <div class="update-main"><b>导演陈屿长片剪辑分享会回放上线</b><p>完整回放 74 分钟，含《雪线之上》两版开场剪辑的对比片段。</p></div>
+            <span class="update-type">回放</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. 分类入口 -->
+      <section class="block" id="channels">
+        <div class="block-head">
+          <h2>按类型进入频道</h2>
+          <span class="lead">8 个常设分类</span>
+        </div>
+        <div class="cat-grid">
+          <a class="cat-card" href="/#featured"><b>自然地理</b><span>冰川、沙漠、海岸线的年际变化记录</span><em>312 部 · 进入 →</em></a>
+          <a class="cat-card" href="/#featured"><b>野生动物</b><span>物种行为、迁徙路线与栖息地观察</span><em>248 部 · 进入 →</em></a>
+          <a class="cat-card" href="/#featured"><b>人文观察</b><span>牧区、渔村、林场的日常生活口述</span><em>196 部 · 进入 →</em></a>
+          <a class="cat-card" href="/#featured"><b>城市生活</b><span>城市野生动物与街区变迁的影像切片</span><em>154 部 · 进入 →</em></a>
+          <a class="cat-card" href="/#featured"><b>独立短片</b><span>8—20 分钟的单主题实验与纪实短片</span><em>132 部 · 进入 →</em></a>
+          <a class="cat-card" href="/#featured"><b>历史档案</b><span>八九十年代胶片修复与当代注释</span><em>98 部 · 进入 →</em></a>
+          <a class="cat-card" href="/#featured"><b>科学探索</b><span>用实验与测量数据解释自然现象</span><em>87 部 · 进入 →</em></a>
+          <a class="cat-card" href="/#featured"><b>创作者访谈</b><span>拍摄决策、器材方案与现场难题复盘</span><em>59 期 · 进入 →</em></a>
+        </div>
+      </section>
+
+      <!-- 5. 深度解析 -->
+      <section class="block" id="analysis">
+        <div class="block-head">
+          <h2>深度解析：自然纪录片怎么看才不浪费时间</h2>
+          <span class="lead">约 800 字</span>
+        </div>
+        <div class="article">
+          <h3>一、先分清「观察型」和「解说型」两种叙事</h3>
+          <p>自然纪实影像在叙事上大致分两类。观察型把摄影机放在现场，尽量不介入，靠长时间蹲守捕捉行为，全片可能没有一句旁白，比如《潮间带》就用环境声和微距画面推进。解说型则会用旁白串起时间线、补充物种知识和数据背景，信息密度更高，适合第一次接触某个题材的观众。</p>
+          <p>两类没有高下之分，但对观看状态的要求不同。观察型需要连续看完一段才有意义，切碎了看会失去节奏；解说型可以分段看，每 10 分钟基本能形成一个完整的信息块。如果你时间零散，先挑解说型入门会更顺。</p>
+
+          <h3>二、判断一部自然纪录片值不值得投入，看四个维度</h3>
+          <ul>
+            <li><b>拍摄周期与素材量</b>：真正有信息量的作品通常会在片尾或访谈里说明蹲守时长。像《雪线之上》第二季单集蹲守 11 天，这类信息能直接反映内容的稀缺程度。</li>
+            <li><b>是否有具体数据</b>：气候与地理类内容如果只讲「冰川在退缩」而没有测量值，说服力有限；《冰川三十年》给出退缩距离和冰舌高度，就属于可核查的表达。</li>
+            <li><b>是否交代拍摄伦理</b>：靠近野生动物、进入保护区、使用红外相机，这些都会影响拍摄对象的正常行为。负责任的作品会在片尾说明如何减少干扰。</li>
+            <li><b>声音设计是否独立成立</b>：自然影像的环境声往往比画面更难做。可以留意是否使用了现场同期声，还是全部用音乐铺满。</li>
+          </ul>
+
+          <h3>三、长片和短片的选择逻辑不一样</h3>
+          <p>长片的价值在于结构。90 分钟以上的作品通常有一条完整的时间线或地理线索，比如《牧场的最后一年》用三集讲完一个牧业年度的完整周期，前后因果在结尾才闭合。看长片建议一次看完一集，中途暂停会打断它对季节推进的铺垫。</p>
+          <p>短片的价值在于密度。8—15 分钟只讲一件事，比如《候鸟驿站》首支短片就只记录鸻鹬类在滩涂停歇的两周。短片更适合用来试探题材兴趣：先看两三支同题材短片，确认自己对这个地理单元或物种有持续兴趣，再进入长片，试错成本更低。</p>
+
+          <div class="callout">一个实用的判断方法：如果一部作品看完之后，你能说出一个具体的数字、一个具体地点或一种具体的动物行为，它大概率提供了有效信息；如果只剩下「画面很美」的印象，那它更接近风光片，不必按纪录片的标准去要求它。</div>
+
+          <h3>四、历史档案类内容要区分「影像价值」和「当代注释」</h3>
+          <p>胶片修复类作品的看点常常不在画面本身。八九十年代的胶片在分辨率和色彩上都无法和现在的 4K 相比，但它记录了一个无法重拍的时间点。《冰川三十年》把 1994 年和 2024 年同机位影像并置，真正起作用的是两组画面之间的差值。</p>
+          <p>看这类内容时，建议把注意力放在注释音轨上。当代研究者会指出旧影像里被忽略的细节，比如当时未记录的前景植被、后来改变的水位线。如果一部档案类作品只有修复画面而没有当代解读，它的信息增量会明显下降。</p>
+
+          <h3>五、配合作者访谈，能补上画面之外的一半信息</h3>
+          <p>自然影像的拍摄条件往往决定了最终呈现。为什么某个镜头只有 8 秒、为什么某个物种整季都没拍到、为什么结尾没有给出结论，这些问题的答案基本都在访谈里。《镜头之外》这类节目把拍摄难题拆开讲，对理解作品本身的帮助，比反复看正片更直接。</p>
+          <p>一个常见误区是把「没拍到」当成失败。实际上，长时间蹲守后只获得少量可用素材是常态，作品如何在这些素材之间组织出叙事，才是创作者真正的工作。理解了这一点，再回看正片，会更容易注意到剪辑上的取舍。</p>
+        </div>
+      </section>
+
+      <!-- 6. 体验指南 -->
+      <section class="block" id="guide">
+        <div class="block-head">
+          <h2>观看路径建议</h2>
+          <span class="lead">从入门到深入的四个阶段</span>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-body">
+              <b>先用短片确定兴趣方向</b>
+              <p>从《潮间带》《候鸟驿站》这类 10—45 分钟的单片开始，试两到三个不同题材：海洋、高原、城市。短片信息集中，看完能立刻判断自己是否想继续深入这个方向。</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-body">
+              <b>再进入三集左右的系列</b>
+              <p>《牧场的最后一年》《夜行城市》都属于结构清晰的中等篇幅，每集 25—40 分钟，适合一周内连续看完。这个阶段重点观察作品如何处理时间线，而不只是看画面。</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-body">
+              <b>配合访谈理解拍摄条件</b>
+              <p>看完系列后去听对应的《镜头之外》，很多当时觉得「平淡」的段落，在知道拍摄难度后会重新被理解。这一步能明显提升后续观看的判断力。</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">4</div>
+            <div class="step-body">
+              <b>最后看历史档案与长片</b>
+              <p>《冰川三十年》这类档案作品需要一定的背景知识才能读出信息量，放在后期看更合适。长片则建议留出完整时段，一次看完一集，避免中断季节推进的铺垫。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. FAQ -->
+      <section class="block" id="faq">
+        <div class="block-head">
+          <h2>常见问题</h2>
+          <span class="lead">关于题材、更新与选择的 6 个问答</span>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>自然纪录片一般多久更新一集？</summary>
+            <div class="answer">取决于拍摄周期。高原和野生动物题材通常两周到一个月一集，因为需要长时间蹲守；城市题材和独立短片节奏更快，一周左右可以更一支。《雪线之上》第二季目前是每两周更新一集，遇到天气窗口会临时调整。</div>
+          </details>
+          <details>
+            <summary>观察型和解说型纪录片有什么区别？</summary>
+            <div class="answer">观察型尽量不介入，靠现场画面和环境声推进，通常没有旁白；解说型会用旁白补充物种知识、时间线和数据背景。前者更接近现场体验，后者信息密度更高，适合刚接触某个题材时入门。</div>
+          </details>
+          <details>
+            <summary>第一次看自然纪录片，从哪一部开始比较好？</summary>
+            <div class="answer">建议从《潮间带》开始。它只有 42 分钟，主题单一，画面直观，不需要背景知识就能看懂。如果对高原题材更感兴趣，可以先看《雪线之上》第二季第 1 集，开头有完整的地理背景交代。</div>
+          </details>
+          <details>
+            <summary>历史档案类的胶片修复片，和普通纪录片有什么不同？</summary>
+            <div class="answer">最大差别在于影像本身记录了无法重拍的时间点。像《冰川三十年》把 1994 年和 2024 年同机位画面并置，价值来自两组画面的差值，而不是画质。看这类作品要配合当代注释音轨，否则容易只看到旧影像而错过信息增量。</div>
+          </details>
+          <details>
+            <summary>怎么判断一部自然纪录片的信息是否可靠？</summary>
+            <div class="answer">看三点：是否给出具体测量数据而不是笼统描述；是否交代拍摄时间、地点和周期；是否说明拍摄对动物的干扰控制方式。三点都具备的作品，通常可以作为参考依据。</div>
+          </details>
+          <details>
+            <summary>独立短片和长片，同题材应该先看哪个？</summary>
+            <div class="answer">先看短片。短片试错成本低，能在十几分钟内判断你对这个地理单元或物种是否有持续兴趣。确认兴趣之后再进入长片，长片的价值在完整结构和季节推进，需要连续观看才能体现。</div>
+          </details>
+        </div>
+      </section>
+
+      <!-- 8. 用户评论 -->
+      <section class="block" id="comments">
+        <div class="block-head">
+          <h2>观众评论</h2>
+          <span class="lead">近期 14 条真实反馈</span>
+        </div>
+        <div class="comment-grid">
+          <div class="comment"><div class="comment-top"><span class="avatar" style="background:#0f5c4a">林</span><span class="comment-name">林间慢走</span><span class="comment-stars">★★★★★</span></div><p class="comment-text">《雪线之上》第 6 集那个岩羊下移的镜头太值了，等了 11 天就为这几分钟，片尾手记里说当时零下 18 度，看得我手心出汗。</p></div>
+          <div class="comment"><div class="comment-top"><span class="avatar" style="background:#e07b39">海</span><span class="comment-name">海风不燥</span><span class="comment-stars">★★★★☆</span></div><p class="comment-text">《潮间带》没有旁白这点很好，环境声做得很细。唯一想吐槽的是 42 分钟有点短，藤壶那段我还想多看一会儿。</p></div>
+          <div class="comment"><div class="comment-top"><span class="avatar" style="background:#2e8b6f">陈</span><span class="comment-name">陈小满</span><span class="comment-stars">★★★★★</span></div><p class="comment-text">《牧场的最后一年》第三集看完沉默了很久。两代人对养牛的分歧拍得很克制，没有站队，这点很难得。</p></div>
+          <div class="comment"><div class="comment-top"><span class="avatar" style="background:#8a5a2b">北</span><span class="comment-name">北纬四十度</span><span class="comment-stars">★★★★☆</span></div><p class="comment-text">《冰川三十年》的对比画面冲击力很强，但我觉得注释音轨可以再长一点，12 分钟不太够讲清楚测量方法。</p></div>
+          <div class="comment"><div class="comment-top"><span class="avatar" style="background:#4a6fa5">夜</span><span class="comment-name">夜班观察员</span><span class="comment-stars">★★★★★</span></div><p class="comment-text">《夜行城市》第四集那个垃圾房点位我也拍过，貉的路线完全一致，看到的时候有种被验证的感觉。</p></div>
+          <div class="comment"><div class="comment-top"><span class="avatar" style="background:#a5573a">镜</span><span class="comment-name">镜头外的人</span><span class="comment-stars">★★★★★</span></div><p class="comment-text">《镜头之外》第 27 期讲水下收音，周野说用两个防水麦分别收近场和远场，这个方法我下周就试。</p></div>
+          <div class="comment"><div class="comment-top"><span class="avatar" style="background:#0f5c4a">候</span><span class="comment-name">候鸟驿站常客</span><span class="comment-stars">★★★★☆</span></div><p class="comment-text">《候鸟驿站》第一支短片节奏偏慢，11 分钟里前 4 分钟都在拍滩涂空镜，耐心看完后面才进入正题。</p></div>
+          <div class="comment"><div class="comment-top"><span class="avatar" style="background:#c0553a">老</span><span class="comment-name">老胶片爱好者</span><span class="comment-stars">★★★★★</span></div><p class="comment-text">修复版比原片清楚太多了，1994 年那段的划痕处理得很自然，没有过度磨皮的感觉，这点要夸。</p></div>
+          <div class="comment"><div class="comment-top"><span class="avatar" style="background:#2e8b6f">青</span><span class="comment-name">青稞与风</span><span class="comment-stars">★★★☆☆</span></div><p class="comment-text">整体不错，但《雪线之上》第二季前两集节奏有点拖，第 3 集之后才进入状态，新观众可能会被劝退。</p></div>
+          <div class="comment"><div class="comment-top"><span class="avatar" style="background:#e07b39">深</span><span class="comment-name">深海蓝鲸</span><span class="comment-stars">★★★★★</span></div><p class="comment-text">看完解析里说的「四个维度」再回看，确实会注意片尾有没有交代拍摄伦理，这个视角以前完全没想过。</p></div>
+          <div class="comment"><div class="comment-top"><span class="avatar" style="background:#4a6fa5">周</span><span class="comment-name">周末不出门</span><span class="comment-stars">★★★★☆</span></div><p class="comment-text">按观看路径建议先看了短片再看系列，顺序确实顺很多。以前直接上长片，经常看到一半走神。</p></div>
+          <div class="comment"><div class="comment-top"><span class="avatar" style="background:#8a5a2b">风</span><span class="comment-name">风蚀地貌</span><span class="comment-stars">★★★★★</span></div><p class="comment-text">希望多上一些地理类的内容，冰川和海岸线都有，沙漠和戈壁的偏少，自然地理频道里翻来翻去就那几部。</p></div>
+          <div class="comment"><div class="comment-top"><span class="avatar" style="background:#0f5c4a">一</span><span class="comment-name">一只红外相机</span><span class="comment-stars">★★★★☆</span></div><p class="comment-text">《夜行城市》附的点位分布图很实用，我照着调整了自家相机的角度，一周内拍到刺猬的概率明显高了。</p></div>
+          <div class="comment"><div class="comment-top"><span class="avatar" style="background:#a5573a">导</span><span class="comment-name">导演的场记板</span><span class="comment-stars">★★★★★</span></div><p class="comment-text">陈屿那场剪辑分享会回放值得反复看，两版开场对比里能清楚看到叙事重心的转移，比看教程有用。</p></div>
+        </div>
+      </section>
+
+      <!-- 9. 相关资讯 -->
+      <section class="block" id="news">
+        <div class="block-head">
+          <h2>影像资讯</h2>
+          <span class="lead">11 月动态 6 条</span>
+        </div>
+        <div class="news-grid">
+          <article class="news-card">
+            <div class="news-thumb"><img src="https://picsum.photos/seed/zixun-xuexian25/600/400" width="600" height="400" loading="lazy" alt="雪线之上第二季拍摄手记发布现场"></div>
+            <div class="news-body">
+              <div class="news-date">2026-11-25</div>
+              <h3>《雪线之上》第二季发布完整拍摄手记</h3>
+              <p>手记共 8 篇，记录第 5、6 集在海拔 4300 米以上的蹲守安排与补给方案。</p>
+            </div>
+          </article>
+          <article class="news-card">
+            <div class="news-thumb"><img src="https://picsum.photos/seed/zixun-chaojian23/600/400" width="600" height="400" loading="lazy" alt="潮间带微距拍摄技术分享"></div>
+            <div class="news-body">
+              <div class="news-date">2026-11-23</div>
+              <h3>《潮间带》微距拍摄方案公开</h3>
+              <p>摄制组公开了潮汐时段选择与防水罩配置，附 24 小时拍摄时间表。</p>
+            </div>
+          </article>
+          <article class="news-card">
+            <div class="news-thumb"><img src="https://picsum.photos/seed/zixun-yexing21/600/400" width="600" height="400" loading="lazy" alt="夜行城市红外相机志愿者招募"></div>
+            <div class="news-body">
+              <div class="news-date">2026-11-21</div>
+              <h3>《夜行城市》第三季招募红外相机志愿者</h3>
+              <p>计划在全国 12 个城市布设 300 台民用相机，报名截止 12 月 10 日。</p>
+            </div>
+          </article>
+          <article class="news-card">
+            <div class="news-thumb"><img src="https://picsum.photos/seed/zixun-bingchuan19/600/400" width="600" height="400" loading="lazy" alt="冰川三十年胶片修复技术说明"></div>
+            <div class="news-body">
+              <div class="news-date">2026-11-19</div>
+              <h3>《冰川三十年》修复技术说明发布</h3>
+              <p>公开 4K 扫描与划痕修复流程，说明如何保留原始颗粒而不做过度的降噪处理。</p>
+            </div>
+          </article>
+          <article class="news-card">
+            <div class="news-thumb"><img src="https://picsum.photos/seed/zixun-houniao16/600/400" width="600" height="400" loading="lazy" alt="候鸟驿站短片系列开更"></div>
+            <div class="news-body">
+              <div class="news-date">2026-11-16</div>
+              <h3>《候鸟驿站》短片系列确认更新节奏</h3>
+              <p>每周一支，覆盖鸻鹬、雁鸭、鹭类三个类群，全部拍摄于江苏沿海滩涂。</p>
+            </div>
+          </article>
+          <article class="news-card">
+            <div class="news-thumb"><img src="https://picsum.photos/seed/zixun-dangan13/600/400" width="600" height="400" loading="lazy" alt="历史档案频道迁移完成"></div>
+            <div class="news-body">
+              <div class="news-date">2026-11-13</div>
+              <h3>历史档案频道完成条目迁移</h3>
+              <p>98 部胶片修复作品统一归入该频道，新增按拍摄年代与地理区域筛选。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 10. 相关推荐 -->
+      <section class="block" id="related">
+        <div class="block-head">
+          <h2>延伸方向</h2>
+          <span class="lead">按主题与创作方式索引</span>
+        </div>
+        <div class="rel-tags">
+          <a class="rel-tag" href="/#featured">高原生态影像 <span>延伸</span></a>
+          <a class="rel-tag" href="/#featured">潮间带与近海记录 <span>延伸</span></a>
+          <a class="rel-tag" href="/#featured">牧区口述史 <span>延伸</span></a>
+          <a class="rel-tag" href="/#featured">胶片修复与并置对比 <span>延伸</span></a>
+          <a class="rel-tag" href="/#featured">城市红外摄影 <span>延伸</span></a>
+          <a class="rel-tag" href="/#featured">水下同期声采集 <span>延伸</span></a>
+          <a class="rel-tag" href="/#featured">无旁白观察型短片 <span>延伸</span></a>
+          <a class="rel-tag" href="/#featured">长时间蹲守手记 <span>延伸</span></a>
+        </div>
+      </section>
+
+      <!-- 11. 补充板块：榜单 + 时间线 -->
+      <section class="block" id="ranking">
+        <div class="block-head">
+          <h2>本周站内热度榜</h2>
+          <span class="lead">按播放与完播率综合排序</span>
+        </div>
+        <div class="rank-table">
+          <div class="rank-row"><span class="rank-no g1">1</span><span class="rank-name">雪线之上 第二季<small>高原生态 · 更新至第 6 集</small></span><span class="rank-score">9.3</span><span class="rank-trend up">↑ 2</span></div>
+          <div class="rank-row"><span class="rank-no g2">2</span><span class="rank-name">牧场的最后一年<small>人文观察 · 全片上线</small></span><span class="rank-score">9.1</span><span class="rank-trend up">↑ 1</span></div>
+          <div class="rank-row"><span class="rank-no g3">3</span><span class="rank-name">镜头之外<small>创作者访谈 · 第 27 期</small></span><span class="rank-score">9.2</span><span class="rank-trend flat">—</span></div>
+          <div class="rank-row"><span class="rank-no">4</span><span class="rank-name">潮间带<small>海洋生态 · 单片 42 分钟</small></span><span class="rank-score">9.0</span><span class="rank-trend up">↑ 3</span></div>
+          <div class="rank-row"><span class="rank-no">5</span><span class="rank-name">夜行城市<small>城市生活 · 更新至第 4 集</small></span><span class="rank-score">8.9</span><span class="rank-trend down">↓ 1</span></div>
+          <div class="rank-row"><span class="rank-no">6</span><span class="rank-name">冰川三十年<small>历史档案 · 单片 68 分钟</small></span><span class="rank-score">8.8</span><span class="rank-trend up">↑ 4</span></div>
+          <div class="rank-row"><span class="rank-no">7</span><span class="rank-name">候鸟驿站<small>独立短片 · 首支上线</small></span><span class="rank-score">8.6</span><span class="rank-trend flat">—</span></div>
+        </div>
+      </section>
+
+      <section class="block" id="timeline">
+        <div class="block-head">
+          <h2>近期上线时间线</h2>
+          <span class="lead">近三周关键节点</span>
+        </div>
+        <div class="timeline">
+          <div class="tl-item"><div class="tl-date">11 月 25 日</div><b>《雪线之上》第二季第 6 集上线</b><p>本季进入冬季段落，附 3 分钟摄制手记。</p></div>
+          <div class="tl-item"><div class="tl-date">11 月 23 日</div><b>《夜行城市》第 4 集上线</b><p>46 台志愿者红外相机素材整合，附点位分布图。</p></div>
+          <div class="tl-item"><div class="tl-date">11 月 22 日</div><b>《冰川三十年》修复版上线</b><p>1994 年素材完成 4K 扫描，新增学者注释音轨。</p></div>
+          <div class="tl-item"><div class="tl-date">11 月 18 日</div><b>历史档案频道上线</b><p>98 部胶片修复作品完成归类和年代筛选。</p></div>
+          <div class="tl-item"><div class="tl-date">11 月 15 日</div><b>《候鸟驿站》系列开更</b><p>首支短片记录江苏沿海滩涂鸻鹬类停歇期。</p></div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 右侧辅助栏 -->
+    <aside class="side-right">
+      <div class="panel">
+        <div class="panel-head">热榜速览</div>
+        <ul class="mini-list">
+          <li><span class="num top">1</span><span class="txt">雪线之上 第二季<small>9.3 分 · 第 6 集</small></span></li>
+          <li><span class="num">2</span><span class="txt">牧场的最后一年<small>9.1 分 · 全片</small></span></li>
+          <li><span class="num">3</span><span class="txt">镜头之外<small>9.2 分 · 第 27 期</small></span></li>
+          <li><span class="num">4</span><span class="txt">潮间带<small>9.0 分 · 单片</small></span></li>
+          <li><span class="num">5</span><span class="txt">夜行城市<small>8.9 分 · 第 4 集</small></span></li>
+        </ul>
+      </div>
+      <div class="panel">
+        <div class="panel-head">今日更新</div>
+        <ul class="mini-list">
+          <li><span class="num">·</span><span class="txt">雪线之上 第 6 集<small>09:30 上线</small></span></li>
+          <li><span class="num">·</span><span class="txt">潮间带 4K 修复版<small>08:15 替换</small></span></li>
+          <li><span class="num">·</span><span class="txt">高原之声 直播预约<small>昨天 18:40</small></span></li>
+        </ul>
+      </div>
+      <div class="panel">
+        <div class="panel-head">热门标签</div>
+        <div style="padding:12px 14px;display:flex;flex-wrap:wrap;gap:7px;">
+          <a class="tag" href="/#featured">高原生态</a>
+          <a class="tag" href="/#featured">野生动物</a>
+          <a class="tag" href="/#featured">人文观察</a>
+          <a class="tag" href="/#featured">胶片修复</a>
+          <a class="tag" href="/#featured">独立短片</a>
+          <a class="tag" href="/#featured">红外摄影</a>
+          <a class="tag" href="/#featured">水下收音</a>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+</div>
+
+<!-- 页尾 -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo" style="gap:9px;">
+          <svg class="logo-mark" viewBox="0 0 40 40" role="img" aria-label="大象TV 图形标志">
+            <rect width="40" height="40" rx="10" fill="#17806a"/>
+            <path d="M11 15c0-3 2.4-5 5.6-5h1.2c2.2 0 3.4 1.2 3.4 3v9.4c0 3.6 2 6 5.4 6 2.6 0 4.4-1.6 4.4-4.2 0-2.4-1.6-3.8-3.8-3.8" stroke="#ffc99c" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+            <circle cx="14.4" cy="15.2" r="1.7" fill="#eaf5f1"/>
+            <path d="M9 27.4h9" stroke="#eaf5f1" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+          <span class="logo-text">大象<span>TV</span></span>
+        </div>
+        <p>聚焦自然纪实与人文影像的观看平台，收录高原、海洋、荒野与城市生活的长片与短片，附片单解析、创作者访谈与观看路径建议。</p>
+      </div>
+      <div class="footer-col">
+        <h4>内容频道</h4>
+        <ul>
+          <li><a href="/#channels">自然地理</a></li>
+          <li><a href="/#channels">野生动物</a></li>
+          <li><a href="/#channels">人文观察</a></li>
+          <li><a href="/#channels">城市生活</a></li>
+          <li><a href="/#channels">独立短片</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>观看参考</h4>
+        <ul>
+          <li><a href="/#featured">精选片单</a></li>
+          <li><a href="/#updates">最新更新</a></li>
+          <li><a href="/#analysis">深度解析</a></li>
+          <li><a href="/#guide">观看路径</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>社区</h4>
+        <ul>
+          <li><a href="/#comments">观众评论</a></li>
+          <li><a href="/#news">影像资讯</a></li>
+          <li><a href="/#ranking">热度榜</a></li>
+          <li><a href="/#timeline">上线时间线</a></li>
+          <li><a href="/#related">延伸方向</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 大象TV · 内容与评分均为站内整理，页面数据统计截至 2026 年 11 月 25 日</span>
+      <span>站内条目信息以片方公开资料为准 · 本页不提供下载与外部跳转</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var searchInput = document.getElementById('siteSearch');
+  var searchBtn = document.getElementById('searchBtn');
+  var cards = Array.prototype.slice.call(document.querySelectorAll('#cardGrid .card'));
+  var noResult = document.getElementById('noResult');
+  var featuredSection = document.getElementById('featured');
+
+  function doSearch(){
+    var q = (searchInput.value || '').trim().toLowerCase();
+    if(!q){
+      cards.forEach(function(c){ c.style.display = ''; });
+      noResult.classList.remove('show');
+      return;
+    }
+    var hit = 0;
+    cards.forEach(function(c){
+      var name = (c.getAttribute('data-name') || '').toLowerCase();
+      var text = c.textContent.toLowerCase();
+      if(name.indexOf(q) > -1 || text.indexOf(q) > -1){
+        c.style.display = '';
+        hit++;
+      }else{
+        c.style.display = 'none';
+      }
+    });
+    noResult.classList.toggle('show', hit === 0);
+    if(featuredSection){
+      featuredSection.scrollIntoView({behavior:'smooth', block:'start'});
+    }
+  }
+
+  searchBtn.addEventListener('click', doSearch);
+  searchInput.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){ e.preventDefault(); doSearch(); }
+  });
+  searchInput.addEventListener('input', function(){
+    if(!searchInput.value.trim()){
+      cards.forEach(function(c){ c.style.display = ''; });
+      noResult.classList.remove('show');
+    }
+  });
+})();
+</script>
+</body>
+  </html>
